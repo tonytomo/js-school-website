@@ -1,155 +1,112 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="img/tut wuri handayani.png">
-    <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/navbar-fixed-top/">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tentang Sekolah</title>
+        <meta name="description" content="Tentang SMA Negeri Surakarta" />
+        <link rel="icon" href="img/tut wuri handayani.png" />
 
-    <title>Tentang</title>
-    <link href="css/style.css" rel="stylesheet"> 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav
+            class="absolute z-20 w-screen flex flex-col gap-2 md:gap-0 md:flex-row justify-between py-4 px-4 md:px-24 lg:px-48 items-center bg-black text-white shadow-xl"
+        >
+            <div class="flex items-center cursor-pointer">
+                <img
+                    src="img/tut wuri handayani.png"
+                    alt="Logo SMAN Boyolali"
+                    class="h-8 w-8"
+                />
+                <a href="home.html" class="pl-4 text-xl font-bold"
+                    >SMA Negeri Surakarta</a
+                >
+            </div>
+            <ul class="flex text-xs md:text-base gap-4 md:gap-0">
+                <li
+                    class="p-2 rounded bg-white bg-opacity-0 hover:bg-opacity-10 transition-colors cursor-pointer"
+                >
+                    <a href="home.html">Beranda</a>
+                </li>
+                <li
+                    class="p-2 rounded bg-white bg-opacity-0 hover:bg-opacity-10 transition-colors cursor-pointer"
+                >
+                    <a href="achievement.html">Prestasi</a>
+                </li>
+                <li
+                    class="p-2 rounded bg-white bg-opacity-0 hover:bg-opacity-10 transition-colors cursor-pointer"
+                >
+                    <a href="about.html">Tentang</a>
+                </li>
+            </ul>
+        </nav>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+        <!-- Contents -->
 
-    <!-- Custom styles for this template -->
-    <link href="css/navbar-fixed-top.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/w3.css">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top" id="header">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html"><b>SMAN 99 Boyolali</b></a>
+        <!-- Content -->
+        <div
+            class="relative z-10 min-h-screen md:min-h-min flex flex-col gap-4 pt-32 md:pt-24 pb-8 px-4 md:px-24 lg:px-48 bg-white shadow-xl"
+        >
+            <h2 class="text-2xl font-bold text-center text-zinc-900">
+                Tentang SMAN Surakarta
+            </h2>
+            <div class="w-16 h-1 bg-zinc-900 mx-auto"></div>
+            <div class="flex flex-col md:flex-row gap-4 mt-4">
+                <div class="flex flex-col gap-4">
+                    <img
+                        src="img/sma.jpg"
+                        alt="Foto Sekolah"
+                        class="rounded-lg"
+                    />
+                    <img
+                        src="img/sma2.jpg"
+                        alt="Foto Sekolah"
+                        class="rounded-lg"
+                    />
+                </div>
+                <div class="flex flex-col gap-4">
+                    <p>
+                        SMA Negeri Surakarta adalah sekolah menengah atas negeri
+                        yang berada di Surakarta, Jawa Tengah. Sekolah ini
+                        memiliki fasilitas yang lengkap dan nyaman untuk
+                        menunjang kegiatan belajar mengajar.
+                    </p>
+                    <p>
+                        SMA Negeri Surakarta memiliki berbagai macam program
+                        unggulan yang dapat membantu siswa dalam mengembangkan
+                        potensi diri. Program unggulan tersebut antara lain
+                        adalah program kelas unggulan, program ekstrakurikuler,
+                        dan program bimbingan belajar.
+                    </p>
+                    <p>
+                        SMA Negeri Surakarta juga memiliki berbagai macam
+                        prestasi yang telah diraih oleh siswa-siswanya. Prestasi
+                        tersebut antara lain adalah juara lomba olimpiade sains,
+                        juara lomba olimpiade matematika, juara lomba olimpiade
+                        bahasa, dan juara lomba olimpiade olahraga.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="produk.html">Penghargaan</a></li>
-            <li class="aktif"><a href="about.html">Tentang</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
 
-    <div class="container-about"> 
-      <!-- Main component for a primary marketing message or call to action -->
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="img/sma.jpg" alt="SMAN 99  Boyolali">
-          </div>
-
-          <div class="item">
-            <img src="img/sma2.jpg" alt="Suasana Kelas">
-          </div>
-
-          <div class="item">
-            <img src="img/sma3.jpg" alt="fasilitas">
-          </div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-      
-      <div class="container-about">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="col-md-4">
-              <!--div class="card"-->
-              <div class="w3-panel w3-border">
-                <div class="card-body">
-                  <h3 class="card-title text-center "><b>Address</b></h3>
-                  <p class="card-text text-center">Jl. panglima sudirman, nomer 123 , Boyolali 761909 <br> </p>
-                </div>
-              </div>
-              <!--/div-->
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <div class="w3-panel w3-border">
-                  <!--<img class="card-img-top" src="..." alt="Card image cap"> -->
-                  <div class="card-body">
-                    <h3 class="card-title text-center"><b>Phone Number</b></h3>
-                    <p class="card-text text-center">>(024)76 / (024)8913619 / <br> +62 821 1111 2222 <br> </p>
-    
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card">
-                <div class="w3-panel w3-border">
-                  <div class="card-body">
-                    <h3 class="card-title text-center"><b>Email</b></h3>
-                    <p class="card-text text-center"> <br>sma99boyolali.ac.id. <br> </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="card">
-              <div class="w3-panel w3-border">
-                <div class="card-body">
-                  <h3 class="card-title text-center"><b>Creators :</b></h3>
-                  <p class="card-text text-center">Nuha Lina Atqia (M0519070)<br>Thoriq Lailhuda (M0519079)
-                    <br>Fathoni Satrio Utomo (M0519088) <br>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div> <!-- /container -->
-    
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </body>
-
+        <!-- Add footer contains contact, address, and email, make it up -->
+        <footer
+            class="absolute z-20 w-screen flex flex-col gap-4 items-center justify-center md:items-start py-8 px-4 md:px-24 lg:px-48 bg-black text-white shadow-xl"
+        >
+            <h2 class="text-2xl font-bold">Kontak Kami</h2>
+            <div class="w-16 h-1 bg-white"></div>
+            <p class="text-sm text-center">
+                Jl. Raya Solo-Sragen Km. 12, Gatak, Sukoharjo, Jawa Tengah 57557
+            </p>
+            <p class="text-sm text-center">Telp: (0271) 7890123</p>
+            <p class="text-sm text-center">
+                Email:
+                <a href="mailto:smansolo@sch.sc.id" class="text-yellow-600">
+                    smansolo@sch.sc.id
+                </a>
+            </p>
+        </footer>
+    </body>
 </html>
